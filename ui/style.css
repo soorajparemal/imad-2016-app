@@ -3,6 +3,10 @@ body {
     background-color: lightgrey;
     margin-top: 75px;
 }
+h6{
+    color:red;
+    font-weight:bold;
+}
 
 .center {
     text-align: center;
