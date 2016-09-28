@@ -13,5 +13,6 @@ button.onClick=function() {
         }
     }
     
-    request.open('GET','http://soorajparemal.imad.hasura-app.io/counter')
+    request.open('GET','http://soorajparemal.imad.hasura-app.io/counter',true);
+    request.send(null);
 }
