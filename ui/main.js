@@ -26,11 +26,11 @@ button.onclick = function() {
     
 };
 var img=document.getElementById('madi');
-function moveright(){
-    marginleft = marginleft + 10;
-    img.style.marginleft = marginleft + 'px';
+function moveRight(){
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + 'px';
 }
 
 img.onclick=function(){
-    var interval = setInterval(moveright,100);
+    var interval = setInterval(moveRight,100);
 };   
