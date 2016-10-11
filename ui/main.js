@@ -25,3 +25,12 @@ button.onclick = function() {
    request.send(null);
     
 };
+var img=document.getElementById('madi');
+function moveright(){
+    marginleft = marginleft + 10;
+    img.style.marginleft = marginleft + 'px';
+}
+
+img.onclick=function(){
+    var interval = setInterval(moveright,100);
+};   
