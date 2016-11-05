@@ -20,7 +20,7 @@ function draw(e)
 	xPos=e.clientX - canvas.offsetLeft;
 	yPos=e.clientY - canvas.offsetTop;
 	
-	if(down == true)
+	if(down === true)
 		{
 			context.lineTo(xPos,yPos);
 			context.stroke();
