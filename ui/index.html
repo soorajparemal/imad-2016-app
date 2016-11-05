@@ -1,32 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="center">
-                <img id='madi' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Sp-logo-ohne-slogan.svg/2000px-Sp-logo-ohne-slogan.svg.png" class="img-medium"/>
-            </div>
-            <br>
-            <div class="main-text" >
-                <hr/>
-                <h6 align="center">Personal</h6>
-                <div class="personal" align="center">
-                    <h1>Hi! . My name is Sooraj Paremal</h1>
-                    <hr/>
-                </div>
-                <h6 align="center">Proffesional</h6>
-                <div class="proffesional" align="center">
-                    <h1>I'm a programming enthusiast !</h1>
-                </div>
-                <hr/>
-            </div>
-            <div class="footer">
-                        This button<button id="counter"> Click Me</button> has been clicked<span id="count">0</span>times.
-            </div>
-        </div> 
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/> 
+	</head>
+	<body>
+	<section>
+
+		<div id="drawingTools">
+			<div align='center'><strong> Color Picker</strong> </div>
+
+			<div id="colors">
+		
+				<button id="black" onclick="changeColor('black')"></button>
+				<button id="white" onclick="changeColor('white')"></button>
+				<button id="red" onclick="changeColor('red')"></button>
+				<button id="green" onclick="changeColor('green')"></button>
+				<button id="yellow" onclick="changeColor('yellow')"></button>
+				<button id="grey" onclick="changeColor('grey')"></button>
+				<button id="orange" onclick="changeColor('orange')"></button>
+				<button id="blue" onclick="changeColor('blue')"></button>
+				<button id="violet" onclick="changeColor('violet')"></button>
+				<button id="maroon" onclick="changeColor('maroon')"></button>
+			</div>
+			<div id="otherTools">
+				<button id="clearCanvas" onclick="clearCanvas()">CLEAR</button>
+				<button id="brushSize1" onclick="changeBrushSize(5)">Size:1</button>	
+				<button id="brushSize2" onclick="changeBrushSize(20)">Size:2</button>
+				<button id="brushSize3" onclick="changeBrushSize(30)">Size:3</button>
+				<button id="brushsize4" onclick="changeBrushSize(40)">Size:4</button><br/>
+				<button id="fillCanvas" onclick="fillCanvas()">Fill</button>
+				<button id="buttBrush" onclick="changeBrushStyle('butt')">Default</button>
+				<button id="squareBrush" onclick="changeBrushStyle('square')">Square Brush</button>
+				<button id="roundBrush" onclick="changeBrushStyle('round')">Round Brush</button>
+				<button id="openFile" onclick="triggerClick()">Open Image</button>		
+
+			</div>
+		</div>
+		<canvas id="canvas" width="1000" height="400"></canvas>		       
+		<div id="save" >
+			<a id="download" download="MyCanvas.png" >Save</a>
+		</div>
+		<input id="file" type="file" accept="image/*"/>
+	</section>
+	<script src="script.js"></script>
+	</body>
 </html>
