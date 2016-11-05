@@ -1,33 +1,97 @@
-body {
-    font-family: sans-serif;
-    background:url(https://material-design.storage.googleapis.com/publish/material_v_9/0Bx4BSt6jniD7OFZFR1ZOUmFWTEE/style_icons_system_intro.png) no-repeat center center fixed;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
+
+{margin :0 padding : 0;}
+
+section
+{
+	padding-top:20px;
+	padding-bottom:20px;
+	background:url(images/paint4.jpg) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-    margin-top: 75px;
 }
-h6{
-    color:red;
-    font-weight:bold;
-    font-size:50px;
-}   
+canvas
+{
+	display:block;
+	border:ridge lightblue;
+	margin:10px auto 0px;
+	background-color:white;
+}
+button
+{
+	border:0;
+	outline:0;
+}
+#drawingTools
+{	
+	 
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+	width:800px;
+	height:140px;
+	margin:0px auto;
+}
+#colors
+{	
+	width:100%;
+	height:20px;
+}
+#colors button
+{
+	width:20%;
+	height:10px;
+	margin-top:5px;
+	float:left;
+	border:2px outset lightblue;
+}
+	#colors button:hover {opacity:0.5;}
+#black {background:black;}
+#white {background: white;}
+#blue {background: blue;}
+#red {background: red;}
+#green {background:green;}
+#yellow {background:yellow;}
+#orange {background: orange;}
+#violet {background: violet;}
+#grey {background: grey; border:outset black; border-width:1px;}
+#maroon {background:maroon;}
 
-.center {
-    text-align: center;
+#otherTools
+{
+	width:100%;
+	height:115px;
 }
+#otherTools button
+{
+	width:20%;
+	height:50px;
+	margin-top:5px;
+	 background:url(images/paint4.jpg) no-repeat center center fixed;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+	border:outset lightblue;
+	color:black;
+	font:25px impact;
+	cursor:pointer;
+	float:left;
+}
+	#otherTools button:hover{opacity:0.5;}
 
-.text-big {
-    font-size: 300%;
-}
+#file {opacity:0;}
 
-.bold {
-    font-weight: bold;
+#save a {
+	width:150px;
+        height:50px;
+        background:url(images/download.jpg) center;
+        border:outset lightblue;
+        color:black;
+        font:0px impact;
+        cursor:pointer;
+        float:right;
 }
-
-.img-medium {
-    height: 200px;
-}
-.main-text{
-    color:black;
-}
+#save a:hover {opacity:0.5;}
